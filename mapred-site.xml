@@ -1,0 +1,318 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+
+<property>
+  <name>hadoop.job.history.user.location</name>
+  <value>none</value>
+  <description> User can specify a location to store the history files of 
+  a particular job. If nothing is specified, the logs are stored in 
+  output directory. The files are stored in "_logs/history/" in the directory.
+  User can stop logging by giving the value "none". 
+  </description>
+</property>
+
+<property>
+  <name>io.sort.factor</name>
+  <value>300</value>
+  <description>The number of streams to merge at once while sorting
+  files.  This determines the number of open file handles.</description>
+</property>
+
+<property>
+  <name>io.sort.mb</name>
+  <value>600</value>
+  <description>The total amount of buffer memory to use while sorting 
+  files, in megabytes.  By default, gives each merge stream 1MB, which
+  should minimize seeks.</description>
+</property>
+
+<property>
+  <name>mapred.job.tracker.handler.count</name>
+  <value>40</value>
+  <description>
+    The number of server threads for the JobTracker. This should be roughly
+    4% of the number of tasktracker nodes.
+  </description>
+</property>
+
+<property>
+  <name>mapred.job.reuse.jvm.num.tasks</name>
+  <value>1</value>
+  <description>How many tasks to run per jvm. If set to -1, there is
+  no limit.
+  </description>
+</property>
+
+<property>
+  <name>mapred.jobtracker.restart.recover</name>
+  <value>false</value>
+  <description>"true" to enable (job) recovery upon restart,
+               "false" to start afresh
+  </description>
+</property>
+
+<property>
+  <name>mapred.jobtracker.job.history.block.size</name>
+  <value>3145728</value>
+  <description>The block size of the job history file. Since the job recovery
+               uses job history, its important to dump job history to disk as 
+               soon as possible. Note that this is an expert level parameter.
+               The default value is set to 3 MB.
+  </description>
+</property>
+
+<property>
+  <name>mapred.reduce.parallel.copies</name>
+  <value>25</value>
+  <description>The default number of parallel transfers run by reduce
+  during the copy(shuffle) phase.
+  </description>
+</property>
+
+<property>
+  <name>mapred.reduce.copy.backoff</name>
+  <value>5</value>
+  <description>The maximum amount of time (in seconds) a reducer spends on 
+  fetching one map output before declaring it as failed.
+  </description>
+</property>
+
+<property>
+  <name>mapred.tasktracker.map.tasks.maximum</name>
+  <value>9</value>
+  <description>The maximum number of map tasks that will be run
+  simultaneously by a task tracker.
+  </description>
+</property>
+
+<property>
+  <name>mapred.tasktracker.reduce.tasks.maximum</name>
+  <value>6</value>
+  <description>The maximum number of reduce tasks that will be run
+  simultaneously by a task tracker.
+  </description>
+</property>
+
+<property>
+  <name>mapred.jobtracker.completeuserjobs.maximum</name>
+  <value>2</value>
+  <description>The maximum number of complete jobs per user to keep around 
+  before delegating them to the job history.</description>
+</property>
+
+<property>
+  <name>mapred.child.java.opts</name>
+  <value>-Xmx1024m -Djava.net.preferIPv4Stack=true</value>
+  <description>Java opts for the task tracker child processes.  
+  The following symbol, if present, will be interpolated: @taskid@ is replaced 
+  by current TaskID. Any other occurrences of '@' will go unchanged.
+  For example, to enable verbose gc logging to a file named for the taskid in
+  /tmp and to set the heap maximum to be a gigabyte, pass a 'value' of:
+        -Xmx1024m -verbose:gc -Xloggc:/tmp/@taskid@.gc
+  
+  The configuration variable mapred.child.ulimit can be used to control the
+  maximum virtual memory of the child processes. 
+  </description>
+</property>
+
+<property>
+  <name>mapred.reduce.tasks.speculative.execution</name>
+  <value>false</value>
+  <description>If true, then multiple instances of some reduce tasks 
+               may be executed in parallel.</description>
+</property>
+
+<property>
+  <name>mapred.speculative.map.gap</name>
+  <value>0.9</value>
+</property>
+
+<property>
+  <name>mapred.speculative.reduce.gap</name>
+  <value>0.9</value>
+</property>
+
+<property>
+  <name>mapred.min.split.size</name>
+  <value>65536</value>
+  <description>The minimum size chunk that map input should be split
+  into.  Note that some file formats may have minimum split sizes that
+  take priority over this setting.</description>
+</property>
+
+<property>
+  <name>mapred.jobtracker.maxtasks.per.job</name>
+  <value>30000</value>
+  <description>The maximum number of tasks for a single job.
+  A value of -1 indicates that there is no maximum.  </description>
+</property>
+
+<property>
+  <name>mapred.tasktracker.dns.interface</name>
+  <value>eth0</value>
+  <description>The name of the Network Interface from which a task
+  tracker should report its IP address.
+  </description>
+ </property>
+ 
+<property>
+  <name>mapred.output.compression.codec</name>
+  <value>org.apache.hadoop.io.compress.GzipCodec</value>
+  <description>If the job outputs are compressed, how should they be compressed?
+  </description>
+</property>
+
+<property>
+  <name>mapred.compress.map.output</name>
+  <value>true</value>
+  <description>Should the outputs of the maps be compressed before being
+               sent across the network. Uses SequenceFile compression.
+  </description>
+</property>
+
+<property>
+  <name>mapred.map.output.compression.codec</name>
+  <value>org.apache.hadoop.io.compress.GzipCodec</value>
+  <description>If the map outputs are compressed, how should they be 
+               compressed?
+  </description>
+</property>
+
+<property>
+  <name>mapred.max.tracker.blacklists</name>
+  <value>4</value>
+  <description>The number of blacklists for a taskTracker by various jobs
+               after which the task tracker could be blacklisted across
+               all jobs. The tracker will be given a tasks later
+               (after a day). The tracker will become a healthy
+               tracker after a restart.
+  </description>
+</property> 
+
+<property>
+  <name>mapred.jobtracker.retirejob.interval</name>
+  <value>28800000</value>
+  <description> The maximum time (in ms) that a completed job remains in memory 
+                before retirement.  This is currently set to 8 hours.  
+  </description>
+</property>
+
+<property>
+  <name>mapred.jobtracker.maxtasks.per.job</name>
+  <value>30000</value>
+  <description>The maximum number of tasks for a single job.  
+               A value of -1 indicates that there is no maximum.  
+  </description>
+</property>
+
+<property>
+  <name>mapred.jobtracker.mintime.before.retirejob</name>
+  <value>60000</value>
+  <description> The minimum time (in ms) before a completed job can be retired.  </description>
+</property>
+
+<property>
+  <name>mapred.jobtracker.historythreads.maximum</name>
+  <value>20</value>
+  <description> The maximum number of pooled threads that can be created to 
+                move retired jobs to the history file
+  </description>
+</property>
+
+ <!-- Fair share scheduler properties -->
+
+  <property>
+    <name>mapred.jobtracker.taskScheduler</name>
+    <value>org.apache.hadoop.mapred.FairScheduler</value>
+    <description>The class responsible for scheduling the tasks.</description>
+  </property>
+
+  <property>
+    <name>mapred.jobtracker.taskScheduler</name>
+    <value>org.apache.hadoop.mapred.FairScheduler</value>
+  </property>
+
+  <property>
+    <name>mapred.fairscheduler.weightadjuster</name>
+    <value>org.apache.hadoop.mapred.NewJobWeightBooster</value>
+  </property>
+
+  <property>
+    <name>mapred.newjobweightbooster.factor</name>
+    <value>3</value>
+    <description>Priority boost factor for new jobs</description>
+  </property>
+
+  <property>
+    <name>mapred.newjobweightbooster.duration</name>
+    <value>300000</value>
+    <description>Priority boost duration (in milliseconds)</description>
+  </property>
+
+  <property>
+    <name>mapred.fairscheduler.poolnameproperty</name>
+    <value>user.name</value>
+    <description>This will make the scheduler look for the property
+                 "user.name" to determine the pool of a job.
+    </description>
+  </property>
+
+  <property>
+    <name>mapred.fairscheduler.assignmultiple</name>
+    <value>true</value>
+    <description>Allow the scheduler to assign both a map and a reduce in the same heartbeat</description>
+  </property>
+
+  <property>
+    <name>mapred.fairscheduler.localitywait.node</name>
+    <value>15</value>
+    <description> Number of seconds to wait to get node local task</description>
+  </property>
+
+  <property>
+    <name>mapred.fairscheduler.localitywait.rack</name>
+    <value>10</value>
+    <description> Number of additional seconds to wait to get rack local task</description>
+  </property>
+
+  <property>
+    <name>mapred.fairscheduler.preemption</name>
+    <value>false</value>
+    <description> Disable preemption </description>
+  </property>
+
+  <property>
+    <name>mapred.fairscheduler.eventlog.enabled</name>
+    <value>false</value>
+    <description> Detailed log (including possible premption events) </description>
+  </property>
+
+  <property>
+    <name>mapred.fairscheduler.updateinterval</name>
+    <value>1000</value>
+    <description> Periodicity in milliseconds of the UpdateThread  </description>
+  </property>
+
+  <property>
+    <name>mapred.fairscheduler.load.max.diff</name>
+    <value>0.4</value>
+    <description> The maximum difference between the load of a TaskTracker and the average load of the cluster  </description>
+  </property>
+
+<property>
+  <name>tasktracker.http.threads</name>
+  <value>50</value>
+  <description>The number of worker threads that for the http server. This is
+               used for map output fetching. We increased this because
+               each map node is serving larger number of map slots.
+  </description>
+</property>
+
+<!--End of Fair share scheduler properties -->
+
+<xi:include href="mapred-site-custom.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+</configuration>

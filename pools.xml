@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<allocations>
+  <poolMaxJobsDefault>10</poolMaxJobsDefault>
+  <pool name="root">
+    <minMaps>3000</minMaps>
+    <minReduces>3000</minReduces>
+    <maxMaps>6000</maxMaps>
+    <maxReduces>5000</maxReduces>
+    <maxRunningJobs>10000</maxRunningJobs>
+  </pool>
+  <pool name="hadoop">
+    <minMaps>200</minMaps>
+    <minReduces>200</minReduces>
+    <maxRunningJobs>10000</maxRunningJobs>
+  </pool>
+  <pool name="etl">
+    <minMaps>1000</minMaps>
+    <minReduces>1000</minReduces>
+    <maxRunningJobs>10000</maxRunningJobs>
+  </pool>
+  <pool name="xyz">
+    <maxRunningJobs>5</maxRunningJobs>
+  </pool>
+</allocations>

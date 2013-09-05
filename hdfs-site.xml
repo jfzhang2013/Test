@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.http.address</name>
+  <value>XYZ:00000</value>
+  <description>
+    The address and the base port where the dfs namenode web ui will listen on.
+    If the port is 0 then the server will start on a free port.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.handler.count</name>
+  <value>40</value>
+  <description>The number of server threads for the datanode.</description>
+</property>
+
+<property>
+  <name>dfs.namenode.handler.count</name>
+  <value>40</value>
+  <description>The number of server threads for the namenode.</description>
+</property>
+
+ <property>
+  <name>dfs.datanode.dns.interface</name>
+  <value>eth0</value>
+  <description>The name of the Network Interface from which a data node should 
+  report its IP address.
+  </description>
+ </property>
+
+<property>
+  <name>dfs.datanode.du.reserved</name>
+  <value>5368709120</value>
+  <description>Reserved space in bytes per volume. Always leave this much space free for non dfs use.
+  </description>
+</property>
+
+<property>
+  <name>dfs.name.dir</name>
+  <value>/hadoop/XYZ/fsimage,/mnt/fsimage/XZY/</value>
+  <description>Determines where on the local filesystem the DFS name node
+      should store the name table(fsimage).  If this is a comma-delimited list
+      of directories then the name table is replicated in all of the
+      directories, for redundancy. </description>
+</property>
+
+
+<property>
+  <name>dfs.name.edits.dir</name>
+  <value>/hadoop/XYZ/fsedits,/mnt/fsedit/XYZ/</value>
+  <description>Determines where on the local filesystem the DFS name node
+      should store the transaction (edits) file. If this is a comma-delimited list of directories then the transaction file is replicated in all of the
+      directories, for redundancy. Default value is same as dfs.name.dir
+  </description>
+</property>
+
+<property>
+  <name>dfs.permissions.supergroup</name>
+  <value>hadoop</value>
+  <description>The name of the group of super-users.</description>
+</property>
+
+
+<property>
+  <name>dfs.permissions</name>
+  <value>false</value>
+  <description>
+    If "true", enable permission checking in HDFS.
+    If "false", permission checking is turned off,
+    but all other behavior is unchanged.
+    Switching from one parameter value to the other does not change the mode,
+    owner or group of files or directories.
+  </description>
+</property>
+
+
+<property>
+  <name>dfs.data.dir</name>
+  <value>/mnt/d0/XYZ,/mnt/d1/XYZ,/mnt/d2/XYZ,/mnt/d3/XYZ,/mnt/d4/XYZ,/mnt/d5/XYZ,/mnt/d6/XYZ,/mnt/d7/XYZ,/mnt/d8/XYZ,/mnt/d9/XYZ,/mnt/d10/XYZ,/mnt/d11/XYZ</value>
+  <description>Determines where on the local filesystem an DFS data node
+  should store its blocks.  If this is a comma-delimited
+  list of directories, then data will be stored in all named
+  directories, typically on different devices.
+  Directories that do not exist are ignored.
+  </description>
+</property>
+
+<property>
+  <name>dfs.block.size</name>
+  <value>268435456</value>
+  <description>The default block size for new files.</description>
+</property>
+
+
+<property>
+  <name>dfs.safemode.threshold.pct</name>
+  <value>1</value>
+  <description>
+    Specifies the percentage of blocks that should satisfy 
+    the minimal replication requirement defined by dfs.replication.min.
+    Values less than or equal to 0 mean not to start in safe mode.
+    Values greater than 1 will make safe mode permanent.
+  </description>
+</property>
+
+<property>
+  <name>dfs.balance.bandwidthPerSec</name>
+  <value>67108864</value>
+  <description>
+        Specifies the maximum amount of bandwidth that each datanode
+        can utilize for the balancing purpose in term of
+        the number of bytes per second.
+  </description>
+</property>
+
+<!--
+<property>
+  <name>dfs.hosts</name>
+  <value>/usr/local/hadoop/XXX/conf/includes</value>
+  <description>Names a file that contains a list of hosts that are
+  permitted to connect to the namenode. The full pathname of the file
+  must be specified.  If the value is empty, all hosts are
+  permitted.</description>
+</property>
+-->
+
+<property>
+  <name>dfs.hosts.exclude</name>
+  <value>/usr/local/hadoop/XYZ/conf/excludes</value>
+  <description>Names a file that contains a list of hosts that are
+  not permitted to connect to the namenode.  The full pathname of the
+  file must be specified.  If the value is empty, no hosts are
+  excluded.</description>
+</property> 
+
+<property>
+  <name>dfs.namenode.support.allowformat</name>
+  <value>false</value>
+  <description>Does HDFS namenode allow itself to be formatted?
+               You should consider setting this to false for any production
+               cluster, to avoid any possibility of formatting a running DFS.
+  </description>
+</property>
+
+<property>      
+  <name>dfs.datanode.max.xcievers</name>        
+  <value>2048</value>   
+  <description>The maximum # of threads that can be connected to a data
+ndoe simultaneously. Default value is 256.      
+  </description>        
+</property>
+
+</configuration>
