@@ -1,4 +1,3 @@
-Test 
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
@@ -5345,11 +5344,11 @@ msgstr "创建一个逻辑卷快照"
 #: dashboards/savannadashboard/templates/nodegroup_templates/nodegroup_templates.html:3
 #: dashboards/savannadashboard/templates/plugins/plugins.html:3
 msgid "Savanna"
-msgstr ""
+msgstr "作业调度"
 
 #: dashboards/savannadashboard/cluster_templates/forms.py:28
 msgid "Cluster Template Name"
-msgstr ""
+msgstr "集群模版名称"
 
 #: dashboards/savannadashboard/cluster_templates/forms.py:36
 #: dashboards/savannadashboard/cluster_templates/tables.py:74
@@ -5358,13 +5357,13 @@ msgstr ""
 #: dashboards/savannadashboard/templates/clusters/_details.html:29
 #: dashboards/savannadashboard/templates/clusters/_nodegroups_details.html:13
 msgid "Template"
-msgstr ""
+msgstr "集群模版"
 
 #: dashboards/savannadashboard/cluster_templates/panel.py:26
 #: dashboards/savannadashboard/cluster_templates/tables.py:115
 #, fuzzy
 msgid "Cluster Templates"
-msgstr "上传虚拟机模板"
+msgstr "集群模板"
 
 #: dashboards/savannadashboard/cluster_templates/tables.py:40
 #: dashboards/savannadashboard/templates/cluster_templates/_upload_file.html:8
@@ -5372,7 +5371,7 @@ msgstr "上传虚拟机模板"
 #: dashboards/savannadashboard/templates/cluster_templates/upload_file.html:6
 #, fuzzy
 msgid "Upload Template"
-msgstr "上传虚拟机模板"
+msgstr "上传集群模板"
 
 #: dashboards/savannadashboard/cluster_templates/tables.py:47
 #: dashboards/savannadashboard/clusters/tables.py:31
@@ -5385,17 +5384,17 @@ msgstr "上传虚拟机模板"
 #: dashboards/savannadashboard/templates/clusters/create_cluster.html:6
 #, fuzzy
 msgid "Launch Cluster"
-msgstr "创建虚拟主机"
+msgstr "启动集群"
 
 #: dashboards/savannadashboard/cluster_templates/tables.py:62
 #: dashboards/savannadashboard/nodegroup_templates/tables.py:46
 msgid "Copy Template"
-msgstr ""
+msgstr "复制集群模版"
 
 #: dashboards/savannadashboard/cluster_templates/tables.py:69
 #, fuzzy
 msgid "Delete Template"
-msgstr "在结束时删除"
+msgstr "删除集群模版"
 
 #: dashboards/savannadashboard/cluster_templates/tables.py:73
 #: dashboards/savannadashboard/clusters/tables.py:49
@@ -5406,18 +5405,18 @@ msgstr "已经删除"
 #: dashboards/savannadashboard/cluster_templates/tables.py:75
 #: dashboards/savannadashboard/nodegroup_templates/tables.py:59
 msgid "Templates"
-msgstr ""
+msgstr "集群模版列表"
 
 #: dashboards/savannadashboard/cluster_templates/tables.py:87
 #: dashboards/savannadashboard/nodegroup_templates/tables.py:31
 #, fuzzy
 msgid "Create Template"
-msgstr "创建镜像"
+msgstr "创建集群模版"
 
 #: dashboards/savannadashboard/cluster_templates/tables.py:94
 #, fuzzy
 msgid "Configure Cluster Template"
-msgstr "查看虚拟机模板"
+msgstr "配置集群模板"
 
 #: dashboards/savannadashboard/cluster_templates/tables.py:105
 #: dashboards/savannadashboard/nodegroup_templates/tables.py:80
@@ -5425,7 +5424,7 @@ msgstr "查看虚拟机模板"
 #: dashboards/savannadashboard/templates/clusters/_details.html:23
 #: dashboards/savannadashboard/templates/nodegroup_templates/_details.html:17
 msgid "Plugin"
-msgstr ""
+msgstr "配置插件"
 
 #: dashboards/savannadashboard/cluster_templates/tables.py:107
 #: dashboards/savannadashboard/nodegroup_templates/tables.py:82
@@ -5435,7 +5434,7 @@ msgstr ""
 #: dashboards/savannadashboard/utils/workflow_helpers.py:166
 #, fuzzy
 msgid "Hadoop Version"
-msgstr "IP类型"
+msgstr "分布式作业调度软件版本"
 
 #: dashboards/savannadashboard/cluster_templates/tables.py:109
 #: dashboards/savannadashboard/cluster_templates/tabs.py:46
@@ -5445,31 +5444,31 @@ msgstr "IP类型"
 #: dashboards/savannadashboard/templates/clusters/_nodegroups_details.html:2
 #, fuzzy
 msgid "Node Groups"
-msgstr "源组"
+msgstr "节点组"
 
 #: dashboards/savannadashboard/cluster_templates/tabs.py:34
 #: dashboards/savannadashboard/clusters/tabs.py:40
 #: dashboards/savannadashboard/nodegroup_templates/tabs.py:35
 msgid "General Info"
-msgstr ""
+msgstr "基本信息"
 
 #: dashboards/savannadashboard/cluster_templates/workflows/copy.py:30
 #, python-format
 msgid "Cluster Template copy %s created"
-msgstr ""
+msgstr "集群模版复制 %s 创建成功"
 
 #: dashboards/savannadashboard/cluster_templates/workflows/create.py:50
 msgid "Plugin name"
-msgstr ""
+msgstr "配置插件名称"
 
 #: dashboards/savannadashboard/cluster_templates/workflows/create.py:58
 #, fuzzy
 msgid "Hadoop version"
-msgstr "IP类型"
+msgstr "分布式作业调度软件版本"
 
 #: dashboards/savannadashboard/cluster_templates/workflows/create.py:68
 msgid "Select plugin and hadoop version for cluster template"
-msgstr ""
+msgstr "选择用来创建集群模版的配置插件和分布式作业调度软件版本"
 
 #: dashboards/savannadashboard/cluster_templates/workflows/create.py:78
 #: dashboards/savannadashboard/cluster_templates/workflows/create.py:222
@@ -5477,46 +5476,46 @@ msgstr ""
 #: dashboards/savannadashboard/templates/cluster_templates/create.html:3
 #, fuzzy
 msgid "Create Cluster Template"
-msgstr "创建逻辑卷类型"
+msgstr "创建集群模版"
 
 #: dashboards/savannadashboard/cluster_templates/workflows/create.py:81
 #: dashboards/savannadashboard/nodegroup_templates/workflows/create.py:288
 #, fuzzy
 msgid "Could not create"
-msgstr "你必须创建一个。"
+msgstr "创建失败"
 
 #: dashboards/savannadashboard/cluster_templates/workflows/create.py:95
 #: dashboards/savannadashboard/nodegroup_templates/workflows/create.py:43
 #, fuzzy
 msgid "Template Name"
-msgstr "镜像名称"
+msgstr "集群模版名称"
 
 #: dashboards/savannadashboard/cluster_templates/workflows/create.py:224
 #, fuzzy, python-format
 msgid "Created Cluster Template %s"
-msgstr "创建新的工程\"%s\""
+msgstr "集群模版 %s 创建成功"
 
 #: dashboards/savannadashboard/clusters/panel.py:26
 #: dashboards/savannadashboard/clusters/tables.py:51
 #: dashboards/savannadashboard/clusters/tables.py:99
 #, fuzzy
 msgid "Clusters"
-msgstr "路由器"
+msgstr "集群列表"
 
 #: dashboards/savannadashboard/clusters/tables.py:38
 #: dashboards/savannadashboard/clusters/workflows/scale.py:42
 #: dashboards/savannadashboard/templates/clusters/scale.html:3
 msgid "Scale Cluster"
-msgstr ""
+msgstr "调整集群规模"
 
 #: dashboards/savannadashboard/clusters/tables.py:50
 msgid "Cluster"
-msgstr ""
+msgstr "集群"
 
 #: dashboards/savannadashboard/clusters/tables.py:75
 #: dashboards/savannadashboard/clusters/workflows/create.py:154
 msgid "Configure Cluster"
-msgstr ""
+msgstr "配置集群"
 
 #: dashboards/savannadashboard/clusters/tables.py:95
 #, fuzzy
@@ -5525,12 +5524,12 @@ msgstr "虚拟主机个数"
 
 #: dashboards/savannadashboard/clusters/tabs.py:107
 msgid "Internal IP"
-msgstr ""
+msgstr "内部IP"
 
 #: dashboards/savannadashboard/clusters/tabs.py:110
 #, fuzzy
 msgid "Management IP"
-msgstr "镜像管理"
+msgstr "管理IP"
 
 #: dashboards/savannadashboard/clusters/tabs.py:115
 msgid " "
@@ -5538,41 +5537,41 @@ msgstr ""
 
 #: dashboards/savannadashboard/clusters/workflows/create.py:41
 msgid "Select plugin and hadoop version for cluster"
-msgstr ""
+msgstr "选择用来创建集群模版的配置插件和分布式作业调度软件版本"
 
 #: dashboards/savannadashboard/clusters/workflows/create.py:64
 #, fuzzy
 msgid "Cluster Name"
-msgstr "路由名称"
+msgstr "集群名称"
 
 #: dashboards/savannadashboard/clusters/workflows/create.py:70
 #, fuzzy
 msgid "Cluster Template"
-msgstr "上传虚拟机模板"
+msgstr "集群模版"
 
 #: dashboards/savannadashboard/clusters/workflows/create.py:74
 #: dashboards/savannadashboard/templates/clusters/_details.html:35
 #, fuzzy
 msgid "Base Image"
-msgstr "创建镜像"
+msgstr "虚拟机镜像"
 
 #: dashboards/savannadashboard/clusters/workflows/create.py:174
 #, fuzzy, python-format
 msgid "Created Cluster %s"
-msgstr "创建路由"
+msgstr "集群 %s 创建成功"
 
 #: dashboards/savannadashboard/clusters/workflows/scale.py:43
 msgid "Scale"
-msgstr ""
+msgstr "规模调整"
 
 #: dashboards/savannadashboard/image_registry/forms.py:67
 #, fuzzy
 msgid "Image updated."
-msgstr "虚拟主机 \"%s\" 已更新"
+msgstr "镜像已更新"
 
 #: dashboards/savannadashboard/image_registry/forms.py:72
 msgid "Image registered."
-msgstr ""
+msgstr "镜像已注册"
 
 #: dashboards/savannadashboard/image_registry/panel.py:26
 #: dashboards/savannadashboard/image_registry/tables.py:75
@@ -5583,7 +5582,7 @@ msgstr "注册"
 #: dashboards/savannadashboard/image_registry/tables.py:33
 #, fuzzy
 msgid "Edit Tags"
-msgstr "编辑规则"
+msgstr "编辑标签"
 
 #: dashboards/savannadashboard/image_registry/tables.py:46
 #: dashboards/savannadashboard/templates/image_registry/_register_image.html:7
@@ -5591,37 +5590,37 @@ msgstr "编辑规则"
 #: dashboards/savannadashboard/templates/image_registry/register_image.html:6
 #, fuzzy
 msgid "Register Image"
-msgstr "创建镜像"
+msgstr "注册镜像"
 
 #: dashboards/savannadashboard/image_registry/tables.py:53
 #, fuzzy
 msgid "Unregister"
-msgstr "注册"
+msgstr "撤销注册"
 
 #: dashboards/savannadashboard/image_registry/tables.py:54
 #, fuzzy
 msgid "Unregistered"
-msgstr "注册"
+msgstr "撤销注册"
 
 #: dashboards/savannadashboard/image_registry/tables.py:71
 msgid "Tags"
-msgstr ""
+msgstr "标签列表"
 
 #: dashboards/savannadashboard/nodegroup_templates/panel.py:26
 #: dashboards/savannadashboard/nodegroup_templates/tables.py:88
 msgid "Node Group Templates"
-msgstr ""
+msgstr "节点组模版"
 
 #: dashboards/savannadashboard/nodegroup_templates/tables.py:38
 msgid "Configure Template"
-msgstr ""
+msgstr "配置节点模版"
 
 #: dashboards/savannadashboard/nodegroup_templates/tables.py:84
 #: dashboards/savannadashboard/templates/cluster_templates/_nodegroups_details.html:20
 #: dashboards/savannadashboard/templates/clusters/_nodegroups_details.html:20
 #: dashboards/savannadashboard/templates/nodegroup_templates/_details.html:23
 msgid "Node Processes"
-msgstr ""
+msgstr "节点进程"
 
 #: dashboards/savannadashboard/nodegroup_templates/tabs.py:48
 #: dashboards/savannadashboard/templates/nodegroup_templates/_service_confs.html:2
@@ -5631,7 +5630,7 @@ msgstr ""
 #: dashboards/savannadashboard/nodegroup_templates/workflows/copy.py:29
 #, python-format
 msgid "Node Group Template copy %s created"
-msgstr ""
+msgstr "成功拷贝节点组模版 %s "
 
 #: dashboards/savannadashboard/nodegroup_templates/workflows/create.py:50
 #, fuzzy
@@ -5641,11 +5640,11 @@ msgstr "云API"
 #: dashboards/savannadashboard/nodegroup_templates/workflows/create.py:54
 #, fuzzy
 msgid "Storage location"
-msgstr "查找镜像"
+msgstr "存储位置"
 
 #: dashboards/savannadashboard/nodegroup_templates/workflows/create.py:56
 msgid "Storage"
-msgstr ""
+msgstr "存储"
 
 #: dashboards/savannadashboard/nodegroup_templates/workflows/create.py:62
 #: dashboards/savannadashboard/templates/nodegroup_templates/_details.html:36
@@ -5656,12 +5655,12 @@ msgstr "逻辑卷类型"
 #: dashboards/savannadashboard/nodegroup_templates/workflows/create.py:69
 #, fuzzy
 msgid "Volumes size (GB)"
-msgstr "逻辑卷大小"
+msgstr "逻辑卷大小（GB）"
 
 #: dashboards/savannadashboard/nodegroup_templates/workflows/create.py:97
 #, fuzzy
 msgid "Processes"
-msgstr "IP地址"
+msgstr "进程"
 
 #: dashboards/savannadashboard/nodegroup_templates/workflows/create.py:100
 msgid "Processes to be launched in node group"
@@ -5669,7 +5668,7 @@ msgstr ""
 
 #: dashboards/savannadashboard/nodegroup_templates/workflows/create.py:137
 msgid "Configure Node Group Template"
-msgstr ""
+msgstr "配置节点组模版"
 
 #: dashboards/savannadashboard/nodegroup_templates/workflows/create.py:160
 #: dashboards/savannadashboard/nodegroup_templates/workflows/create.py:285
@@ -5677,36 +5676,36 @@ msgstr ""
 #: dashboards/savannadashboard/templates/nodegroup_templates/create.html:3
 #, fuzzy
 msgid "Create Node Group Template"
-msgstr "创建路由"
+msgstr "创建节点组模版"
 
 #: dashboards/savannadashboard/nodegroup_templates/workflows/create.py:162
 #, fuzzy, python-format
 msgid "Created Node Group Template %s"
-msgstr "创建新的工程\"%s\""
+msgstr "节点组模版 %s 创建成功""
 
 #: dashboards/savannadashboard/nodegroup_templates/workflows/create.py:267
 msgid "Select plugin and hadoop version"
-msgstr ""
+msgstr "选择用来创建集群模版的配置插件和分布式作业调度软件版本"
 
 #: dashboards/savannadashboard/plugins/panel.py:26
 #: dashboards/savannadashboard/plugins/tables.py:47
 msgid "Plugins"
-msgstr ""
+msgstr "插件"
 
 #: dashboards/savannadashboard/plugins/tables.py:40
 msgid "Supported Hadoop Versions"
-msgstr ""
+msgstr "所支持的分布式作业调度软件版本"
 
 #: dashboards/savannadashboard/plugins/tables.py:43
 #, fuzzy
 msgid "Plugin Description"
-msgstr "描述"
+msgstr "插件描述"
 
 #: dashboards/savannadashboard/templates/cluster_templates/_details.html:2
 #: dashboards/savannadashboard/templates/nodegroup_templates/_details.html:2
 #, fuzzy
 msgid "Template Overview"
-msgstr "镜像概述"
+msgstr "模版概述"
 
 #: dashboards/savannadashboard/templates/cluster_templates/_details.html:19
 #: dashboards/savannadashboard/templates/clusters/_details.html:41
@@ -5723,21 +5722,21 @@ msgstr ""
 #: dashboards/savannadashboard/templates/clusters/_details.html:55
 #: dashboards/savannadashboard/templates/clusters/_nodegroups_details.html:33
 msgid "Node Configurations"
-msgstr ""
+msgstr "节点配置"
 
 #: dashboards/savannadashboard/templates/cluster_templates/_details.html:50
 #: dashboards/savannadashboard/templates/clusters/_details.html:72
 msgid "Cluster configurations are not specified"
-msgstr ""
+msgstr "没有制定集群配置模版"
 
 #: dashboards/savannadashboard/templates/cluster_templates/_nodegroups_details.html:6
 #, fuzzy
 msgid "Node Group"
-msgstr "源组"
+msgstr "节点组"
 
 #: dashboards/savannadashboard/templates/cluster_templates/_nodegroups_details.html:7
 msgid "Nodes Count"
-msgstr ""
+msgstr "节点规模"
 
 #: dashboards/savannadashboard/templates/cluster_templates/_nodegroups_details.html:17
 #: dashboards/savannadashboard/templates/clusters/_details.html:33
@@ -5753,12 +5752,12 @@ msgstr ""
 #: dashboards/savannadashboard/templates/cluster_templates/_nodegroups_details.html:50
 #: dashboards/savannadashboard/templates/clusters/_nodegroups_details.html:50
 msgid "Node configurations are not specified"
-msgstr ""
+msgstr "没有指定节点配置信息"
 
 #: dashboards/savannadashboard/templates/cluster_templates/_upload_file.html:19
 #, fuzzy
 msgid "Upload"
-msgstr "重新加载"
+msgstr "上传"
 
 #: dashboards/savannadashboard/templates/cluster_templates/cluster_templates.html:6
 msgid "Savanna - Cluster Templates"
@@ -5767,75 +5766,75 @@ msgstr ""
 #: dashboards/savannadashboard/templates/cluster_templates/configure.html:6
 #: dashboards/savannadashboard/templates/cluster_templates/create.html:6
 msgid "Savanna - Create Cluster Template"
-msgstr ""
+msgstr "创建集群模版"
 
 #: dashboards/savannadashboard/templates/cluster_templates/details.html:3
 #, fuzzy
 msgid "Cluster Template Details"
-msgstr "逻辑卷细节"
+msgstr "集群模版详细信息"
 
 #: dashboards/savannadashboard/templates/cluster_templates/details.html:6
 msgid "Savanna - Cluster Template Details"
-msgstr ""
+msgstr "集群模版详细信息"
 
 #: dashboards/savannadashboard/templates/clusters/_create_cluster.html:18
 #: dashboards/savannadashboard/templates/image_registry/_edit_tags.html:24
 #: dashboards/savannadashboard/templates/image_registry/_register_image.html:22
 msgid " Done"
-msgstr ""
+msgstr "完成"
 
 #: dashboards/savannadashboard/templates/clusters/_details.html:2
 #, fuzzy
 msgid "Cluster Overview"
-msgstr "逻辑卷概况"
+msgstr "集权概述"
 
 #: dashboards/savannadashboard/templates/clusters/_details.html:16
 #, fuzzy
 msgid "Error Details"
-msgstr "虚机网络接口细节"
+msgstr "错误信息"
 
 #: dashboards/savannadashboard/templates/clusters/_instances_details.html:2
 #, fuzzy
 msgid "Cluster Instances"
-msgstr "虚拟主机个数"
+msgstr "集群中的实例"
 
 #: dashboards/savannadashboard/templates/clusters/_nodegroups_details.html:7
 #, fuzzy
 msgid "Number of Nodes"
-msgstr "逻辑卷数量"
+msgstr "节点规模"
 
 #: dashboards/savannadashboard/templates/clusters/clusters.html:6
 msgid "Savanna - Clusters"
-msgstr ""
+msgstr "集群"
 
 #: dashboards/savannadashboard/templates/clusters/configure.html:6
 #: dashboards/savannadashboard/templates/clusters/create.html:6
 msgid "Savanna - Launch Cluster"
-msgstr ""
+msgstr "启动集群"
 
 #: dashboards/savannadashboard/templates/clusters/details.html:3
 #, fuzzy
 msgid "Cluster Details"
-msgstr "逻辑卷细节"
+msgstr "集群详细信息"
 
 #: dashboards/savannadashboard/templates/clusters/details.html:6
 #, fuzzy
 msgid "Savanna - Cluster Details"
-msgstr "逻辑卷细节"
+msgstr "集群详细信息"
 
 #: dashboards/savannadashboard/templates/clusters/scale.html:6
 msgid "Savanna - Scale Cluster"
-msgstr ""
+msgstr "调整集群规模"
 
 #: dashboards/savannadashboard/templates/image_registry/_edit_tags.html:7
 #: dashboards/savannadashboard/templates/image_registry/edit_tags.html:3
 #: dashboards/savannadashboard/templates/image_registry/edit_tags.html:6
 msgid "Edit Image Tags"
-msgstr ""
+msgstr "编辑镜像标签"
 
 #: dashboards/savannadashboard/templates/image_registry/image_registry.html:6
 msgid "Savanna - Image Registry"
-msgstr ""
+msgstr "镜像注册"
 
 #: dashboards/savannadashboard/templates/nodegroup_templates/_details.html:33
 msgid "HDFS placement"
@@ -5858,46 +5857,46 @@ msgstr "暂时磁盘"
 #: dashboards/savannadashboard/templates/nodegroup_templates/configure.html:6
 #: dashboards/savannadashboard/templates/nodegroup_templates/create.html:6
 msgid "Savanna - Create Node Group Template"
-msgstr ""
+msgstr "创建节点组模版"
 
 #: dashboards/savannadashboard/templates/nodegroup_templates/details.html:3
 #, fuzzy
 msgid "Nodegroup Template Details"
-msgstr "逻辑卷细节"
+msgstr "节点组模版详细信息"
 
 #: dashboards/savannadashboard/templates/nodegroup_templates/details.html:6
 msgid "Savanna node group template details"
-msgstr ""
+msgstr "节点组模版详细信息"
 
 #: dashboards/savannadashboard/templates/nodegroup_templates/nodegroup_templates.html:6
 msgid "Savanna - Node Group Templates"
-msgstr ""
+msgstr "节点组模版列表"
 
 #: dashboards/savannadashboard/templates/plugins/_details.html:3
 #, fuzzy
 msgid "Plugin Overview"
-msgstr "子网概况"
+msgstr "插件概况"
 
 #: dashboards/savannadashboard/templates/plugins/_details.html:11
 msgid "Title"
-msgstr ""
+msgstr "名称"
 
 #: dashboards/savannadashboard/templates/plugins/_details.html:15
 msgid "Supported versions"
-msgstr ""
+msgstr "支持的版本"
 
 #: dashboards/savannadashboard/templates/plugins/details.html:3
 #, fuzzy
 msgid "Plugin Detail"
-msgstr "虚机网络接口细节"
+msgstr "插件详细信息"
 
 #: dashboards/savannadashboard/templates/plugins/details.html:6
 msgid "Savanna Plugin Details"
-msgstr ""
+msgstr "插件详细信息"
 
 #: dashboards/savannadashboard/templates/plugins/plugins.html:6
 msgid "Savanna - Plugins"
-msgstr ""
+msgstr "插件列表"
 
 #: dashboards/savannadashboard/utils/anti_affinity.py:33
 msgid "Use anti-affinity groups for: "
@@ -5914,7 +5913,7 @@ msgstr ""
 #: dashboards/savannadashboard/utils/workflow_helpers.py:158
 #, fuzzy
 msgid "Plugin Name"
-msgstr "逻辑卷名称"
+msgstr "插件名称"
 
 #: dashboards/settings/dashboard.py:24 templates/_header.html:4
 msgid "Settings"
